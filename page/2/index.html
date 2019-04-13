@@ -84,7 +84,7 @@
 <meta name="description" content="Persist + Plan = Growing">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Deep into Android">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Deep into Android">
 <meta property="og:description" content="Persist + Plan = Growing">
 <meta property="og:locale" content="default">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
 
 
 
@@ -302,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/09/Android系统启动流程之Launcher进程启动/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/22/Android主流三方库源码分析（四、深入理解GreenDao源码）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JsonChao">
@@ -321,7 +321,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/03/09/Android系统启动流程之Launcher进程启动/" itemprop="url">Android系统启动流程之Launcher进程启动</a></h1>
+                <a class="post-title-link" href="/2018/12/22/Android主流三方库源码分析（四、深入理解GreenDao源码）/" itemprop="url">Android主流三方库源码分析（四、深入理解GreenDao源码）</a></h1>
         
 
         <div class="post-meta">
@@ -333,650 +333,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-09T15:00:00+08:00">
-                2019-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android核心源码分析/" itemprop="url" rel="index">
-                    <span itemprop="name">Android核心源码分析</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/09/Android系统启动流程之Launcher进程启动/" class="leancloud_visitors" data-flag-title="Android系统启动流程之Launcher进程启动">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。前面几篇文章我们已经详细分析了Android系统启动流程的init进程、Zygote进程和SystemServer进程。本篇，我们来分析一下Launcher的启动过程。
-Android系统启动的
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/03/09/Android系统启动流程之Launcher进程启动/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/03/Android系统启动流之SystemServer进程启动/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JsonChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deep into Android">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/03/Android系统启动流之SystemServer进程启动/" itemprop="url">Android系统启动流程之SystemServer进程启动</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-03T22:32:00+08:00">
-                2019-03-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android核心源码分析/" itemprop="url" rel="index">
-                    <span itemprop="name">Android核心源码分析</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/03/03/Android系统启动流之SystemServer进程启动/" class="leancloud_visitors" data-flag-title="Android系统启动流程之SystemServer进程启动">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。在上一篇中，笔者已经分析过Android系统启动流程中的init进程启动部分。Android系统中各个进程的先后顺序为：
-init进程 –-&gt; Zygote进程 –&gt; SystemS
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/03/03/Android系统启动流之SystemServer进程启动/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/24/Android系统启动流程之Zygote进程启动/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JsonChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deep into Android">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/24/Android系统启动流程之Zygote进程启动/" itemprop="url">Android系统启动流程之Zygote进程启动</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-24T18:25:00+08:00">
-                2019-02-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android核心源码分析/" itemprop="url" rel="index">
-                    <span itemprop="name">Android核心源码分析</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/02/24/Android系统启动流程之Zygote进程启动/" class="leancloud_visitors" data-flag-title="Android系统启动流程之Zygote进程启动">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。在上一篇中，我们已经分析过Android系统启动流程中的init进程启动部分。在这一篇中，我们将继续分享Android系统启动流程中的Zygote进程启动部分。我们先看看Gityuan博客中的一
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/24/Android系统启动流程之Zygote进程启动/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/18/Android系统启动流程之init进程启动/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JsonChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deep into Android">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/18/Android系统启动流程之init进程启动/" itemprop="url">Android系统启动流程之init进程启动</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-18T01:00:00+08:00">
-                2019-02-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android核心源码分析/" itemprop="url" rel="index">
-                    <span itemprop="name">Android核心源码分析</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/02/18/Android系统启动流程之init进程启动/" class="leancloud_visitors" data-flag-title="Android系统启动流程之init进程启动">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。众所周知，Android核心源码这一块的知识一直是阻碍广大Android开发者成为高级甚至资深Android的拦路虎，因此，从这篇开始，笔者接下来将会陪大家深入分析Android中的核心源码，从
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/18/Android系统启动流程之init进程启动/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/28/Android主流三方库源码分析（九、深入理解EventBus源码）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JsonChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deep into Android">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/28/Android主流三方库源码分析（九、深入理解EventBus源码）/" itemprop="url">Android主流三方库源码分析（九、深入理解EventBus源码）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-28T00:02:00+08:00">
-                2019-01-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-22T22:44:00+08:00">
+                2018-12-22
               </time>
             
 
@@ -1015,7 +373,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
           
           
-             <span id="/2019/01/28/Android主流三方库源码分析（九、深入理解EventBus源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（九、深入理解EventBus源码）">
+             <span id="/2018/12/22/Android主流三方库源码分析（四、深入理解GreenDao源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（四、深入理解GreenDao源码）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1049,12 +407,11 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           
           
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。不知不觉，Android主流三方库源码分析系列已经来到最后关头了。这一次，笔者将会对Android中的事件总线框架EventBus源码进行详细地解析，一起来和大家揭开它背后的面纱。
-一、简单示例
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。前两篇我们详细地分析了Android的网络底层框架OKHttp和封装框架Retrofit的核心源码，如果对OKHttp或Retrofit内部机制不了解的可以看看Android主流三方库源码分析（
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/01/28/Android主流三方库源码分析（九、深入理解EventBus源码）/#more" rel="contents">
+            <a class="btn" href="/2018/12/22/Android主流三方库源码分析（四、深入理解GreenDao源码）/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1105,7 +462,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/Android主流三方库源码分析（八、深入理解Dagger2源码）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/16/Android主流三方库源码分析（三、深入理解Glide源码）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JsonChao">
@@ -1124,7 +481,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/20/Android主流三方库源码分析（八、深入理解Dagger2源码）/" itemprop="url">Android主流三方库源码分析（八、深入理解Dagger2源码）</a></h1>
+                <a class="post-title-link" href="/2018/12/16/Android主流三方库源码分析（三、深入理解Glide源码）/" itemprop="url">Android主流三方库源码分析（三、深入理解Glide源码）</a></h1>
         
 
         <div class="post-meta">
@@ -1136,8 +493,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-20T23:17:00+08:00">
-                2019-01-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-16T20:19:00+08:00">
+                2018-12-16
               </time>
             
 
@@ -1176,7 +533,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
           
           
-             <span id="/2019/01/20/Android主流三方库源码分析（八、深入理解Dagger2源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（八、深入理解Dagger2源码）">
+             <span id="/2018/12/16/Android主流三方库源码分析（三、深入理解Glide源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（三、深入理解Glide源码）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1210,11 +567,11 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           
           
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。上一篇，笔者详细地分析了Android中的依赖注入框架ButterKnife，使用它帮助我们解决了重复编写findViewById和setOnclickListener的繁琐。众所周知，当项目越
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。前两篇我们详细地分析了Android的网络底层框架OKHttp和封装框架Retrofit的核心源码，如果对OKHttp或Retrofit内部机制不了解的可以看看Android主流三方库源码分析（
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/01/20/Android主流三方库源码分析（八、深入理解Dagger2源码）/#more" rel="contents">
+            <a class="btn" href="/2018/12/16/Android主流三方库源码分析（三、深入理解Glide源码）/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1265,7 +622,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/13/Android主流三方库源码分析（七、深入理解ButterKnife源码）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/09/Android主流三方库源码分析（二、深入理解Retrofit源码）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JsonChao">
@@ -1284,7 +641,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/13/Android主流三方库源码分析（七、深入理解ButterKnife源码）/" itemprop="url">Android主流三方库源码分析（七、深入理解ButterKnife源码）</a></h1>
+                <a class="post-title-link" href="/2018/12/09/Android主流三方库源码分析（二、深入理解Retrofit源码）/" itemprop="url">Android主流三方库源码分析（二、深入理解Retrofit源码）</a></h1>
         
 
         <div class="post-meta">
@@ -1296,8 +653,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-13T22:57:00+08:00">
-                2019-01-13
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-09T22:19:00+08:00">
+                2018-12-09
               </time>
             
 
@@ -1336,7 +693,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
           
           
-             <span id="/2019/01/13/Android主流三方库源码分析（七、深入理解ButterKnife源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（七、深入理解ButterKnife源码）">
+             <span id="/2018/12/09/Android主流三方库源码分析（二、深入理解Retrofit源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（二、深入理解Retrofit源码）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1370,11 +727,11 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           
           
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。不知不觉，笔者已经对Android主流三方库中的网络框架OkHttp、Retrofit，图片加载框架Glide、数据库框架GreenDao、响应式编程框架RxJava、内存泄露框架LeakCan
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。前篇我们详细地分析了OKHttp的核心源码，如果对OKHttp内部机制不了解的可以看看Android主流三方库源码分析（一、深入理解OKHttp源码）。这篇，将会来深入地分析下目前Android
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/01/13/Android主流三方库源码分析（七、深入理解ButterKnife源码）/#more" rel="contents">
+            <a class="btn" href="/2018/12/09/Android主流三方库源码分析（二、深入理解Retrofit源码）/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1425,7 +782,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/06/Android主流三方库源码分析（六、深入理解Leakcanary源码）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/Android主流三方库源码分析（一、深入理解OKHttp源码）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JsonChao">
@@ -1444,7 +801,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/06/Android主流三方库源码分析（六、深入理解Leakcanary源码）/" itemprop="url">Android主流三方库源码分析（六、深入理解Leakcanary源码）</a></h1>
+                <a class="post-title-link" href="/2018/12/01/Android主流三方库源码分析（一、深入理解OKHttp源码）/" itemprop="url">Android主流三方库源码分析（一、深入理解OKHttp源码）</a></h1>
         
 
         <div class="post-meta">
@@ -1456,8 +813,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-06T18:35:00+08:00">
-                2019-01-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-01T19:49:00+08:00">
+                2018-12-01
               </time>
             
 
@@ -1496,7 +853,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
           
           
-             <span id="/2019/01/06/Android主流三方库源码分析（六、深入理解Leakcanary源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（六、深入理解Leakcanary源码）">
+             <span id="/2018/12/01/Android主流三方库源码分析（一、深入理解OKHttp源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（一、深入理解OKHttp源码）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1530,11 +887,11 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           
           
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。在Android主流三方库源码分析系列的前几篇文章中，笔者已经对网络、图片、数据库、响应式编程中最热门的第三方开源框架进行了较为深入地讲解，如果有朋友对这四块感兴趣的话，可以去了解下。本篇，我将
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。前两篇我们详细分析了View的核心源码—Android的触摸事件传递机制和Android View的绘制流程，从这篇开始，笔者接下来将会陪大家深入分析目前Android中大部分的主流开源框架源码
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/01/06/Android主流三方库源码分析（六、深入理解Leakcanary源码）/#more" rel="contents">
+            <a class="btn" href="/2018/12/01/Android主流三方库源码分析（一、深入理解OKHttp源码）/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1585,7 +942,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/01/Android主流三方库源码分析（五、深入理解RxJava源码）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/28/Android View的绘制流程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JsonChao">
@@ -1604,7 +961,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/01/Android主流三方库源码分析（五、深入理解RxJava源码）/" itemprop="url">Android主流三方库源码分析（五、深入理解RxJava源码）</a></h1>
+                <a class="post-title-link" href="/2018/10/28/Android View的绘制流程/" itemprop="url">Android View的绘制流程</a></h1>
         
 
         <div class="post-meta">
@@ -1616,8 +973,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-01T23:26:00+08:00">
-                2019-01-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-28T20:41:00+08:00">
+                2018-10-28
               </time>
             
 
@@ -1639,8 +996,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/安卓主流三方库源码分析/" itemprop="url" rel="index">
-                    <span itemprop="name">安卓主流三方库源码分析</span>
+                  <a href="/categories/安卓进阶/" itemprop="url" rel="index">
+                    <span itemprop="name">安卓进阶</span>
                   </a>
                 </span>
 
@@ -1656,7 +1013,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
           
           
-             <span id="/2019/01/01/Android主流三方库源码分析（五、深入理解RxJava源码）/" class="leancloud_visitors" data-flag-title="Android主流三方库源码分析（五、深入理解RxJava源码）">
+             <span id="/2018/10/28/Android View的绘制流程/" class="leancloud_visitors" data-flag-title="Android View的绘制流程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1690,11 +1047,11 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           
           
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。到目前为止笔者分析了Android中最热门的网络底层和封装框架：Android主流三方库源码分析（一、深入理解OKHttp源码）和Android主流三方库源码分析（二、深入理解Retrofit源
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。上一篇中我们讲到了Android的触摸事件传递机制，除此之外，关于Android View的绘制流程这一块也是View相关的核心知识点。我们都知道，PhoneWindow是Android系统中最
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/01/01/Android主流三方库源码分析（五、深入理解RxJava源码）/#more" rel="contents">
+            <a class="btn" href="/2018/10/28/Android View的绘制流程/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1745,7 +1102,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/29/2018年终总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/17/Android触摸事件传递机制/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JsonChao">
@@ -1764,7 +1121,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/29/2018年终总结/" itemprop="url">2018年终总结</a></h1>
+                <a class="post-title-link" href="/2018/10/17/Android触摸事件传递机制/" itemprop="url">Android触摸事件传递机制</a></h1>
         
 
         <div class="post-meta">
@@ -1776,8 +1133,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-29T22:00:00+08:00">
-                2018-12-29
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-17T22:38:00+08:00">
+                2018-10-17
               </time>
             
 
@@ -1799,8 +1156,8 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/年终总结/" itemprop="url" rel="index">
-                    <span itemprop="name">年终总结</span>
+                  <a href="/categories/安卓进阶/" itemprop="url" rel="index">
+                    <span itemprop="name">安卓进阶</span>
                   </a>
                 </span>
 
@@ -1816,7 +1173,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
           
           
-             <span id="/2018/12/29/2018年终总结/" class="leancloud_visitors" data-flag-title="2018年终总结">
+             <span id="/2018/10/17/Android触摸事件传递机制/" class="leancloud_visitors" data-flag-title="Android触摸事件传递机制">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1850,11 +1207,660 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
         
           
           
-前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。今天，已经是2018年最后一天的工作日了，回想2018学习路上的点点滴滴，有收获和喜悦，也有烦恼与焦虑，但是，总的来说，这一年，我在技术上的提升还是比较大的，因此，我感觉，我的付出是值得的，接下
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。一、了解Activity的构成一个Activity包含了一个Window对象，这个对象是由PhoneWindow来实现的。PhoneWindow将DecorView作为整个应用窗口的根View，
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/12/29/2018年终总结/#more" rel="contents">
+            <a class="btn" href="/2018/10/17/Android触摸事件传递机制/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/26/ Python入门篇/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JsonChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deep into Android">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/26/ Python入门篇/" itemprop="url">Python入门篇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-26T22:46:00+08:00">
+                2018-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/26/ Python入门篇/" class="leancloud_visitors" data-flag-title="Python入门篇">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+简介成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。随着人工智能和AI行业的兴起，Python已经成为程序员不得不学的一门编程语言了，本系列文章主要是涉及使用Python入门方面的知识。
+初识Pythonwhat：python是什么？
+    它
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/26/ Python入门篇/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/09/一文全面了解Android单元测试/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JsonChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deep into Android">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/09/一文全面了解Android单元测试/" itemprop="url">一文全面了解Android单元测试</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-09T23:06:00+08:00">
+                2018-07-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/安卓进阶/" itemprop="url" rel="index">
+                    <span itemprop="name">安卓进阶</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/09/一文全面了解Android单元测试/" class="leancloud_visitors" data-flag-title="一文全面了解Android单元测试">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。==》完整项目单元测试学习案例
+众所周知，一个好的项目需要不断地打造，而一些有效的测试则是加速这一过程的利器。本篇博文将带你了解并逐步深入Android单元测试。
+什么是单元测试？
+单元测试就是
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/09/一文全面了解Android单元测试/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/22/Some awesome tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JsonChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deep into Android">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/22/Some awesome tips/" itemprop="url">可能会改变你的话</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-22T21:17:00+08:00">
+                2018-04-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/其它/" itemprop="url" rel="index">
+                    <span itemprop="name">其它</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/22/Some awesome tips/" class="leancloud_visitors" data-flag-title="可能会改变你的话">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。这是一篇记录平时读书遇到的一些让人觉得会改变自己的话。
+Some awesome tips1.一个浪头打过来，最好的办法是迎上去了解个究竟，而不是漠视，或者干脆当事情没有发生。
+
+2.记住这个教
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/22/Some awesome tips/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/18/初识人工智能/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JsonChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deep into Android">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/18/初识人工智能/" itemprop="url">初识人工智能</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-18T22:15:00+08:00">
+                2018-03-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/18/初识人工智能/" class="leancloud_visitors" data-flag-title="初识人工智能">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+前言成为一名优秀的Android开发，需要一份完备的知识体系，在这里，让我们一起成长为自己所想的那样~。AI(人工智能)的idea起源于20世纪50年代，在20世纪80年代时，ML(机器学习)开始变得流行起来，在大约2010年，DL(深度学习)在AI的推动下有了大的发展。下图是三者直接的关系图：
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/18/初识人工智能/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1896,7 +1902,7 @@ init进程 –-&gt; Zygote进程 –&gt; SystemS
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
